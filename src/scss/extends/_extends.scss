@@ -1,0 +1,12 @@
+%weather-more-data {
+    h3 {
+        margin: .225rem 0;
+        text-transform: uppercase;
+    }
+    span {
+        font-weight: 400;
+        &:last-child {
+            font-weight: 300;
+        }
+    }
+}

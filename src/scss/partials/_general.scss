@@ -14,3 +14,15 @@ body {
 .flex__column {
     flex-direction: column;
 }
+.flex__row {
+    flex-direction: row;
+}
+.flex__justify-center {
+    justify-content: center;
+}
+.flex__space-evenly {
+    justify-content: space-evenly;
+}
+.flex__align-center {
+    align-items: center;
+}

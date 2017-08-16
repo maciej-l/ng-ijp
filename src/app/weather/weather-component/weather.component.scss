@@ -1,5 +1,6 @@
 // import variables
 @import '../../../scss/variables/_varaibles';
+@import '../../../scss/extends/_extends';
 
 // content
 .data__container-weather {
@@ -17,11 +18,80 @@
     margin-bottom: .250rem;
 }
 .weather__lastupdate-content {
-    font-weight: 700;
+    font-weight: 400;
+}
+.weather__lastupdate-refresh {
+    cursor: pointer;
+        i {
+            font-size: 2.500rem;
+        }
+        span {
+            display: inline-block;
+            margin-left: .500rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            line-height: 16px;
+        }
 }
 .weather__current-container {
 
 }
+.weather__current-condition {
+    width: 45%;
+    font-size: 4rem;
+}
+.weather__current-temp {
+    width: 55%;
+    font-size: 3.250rem;
+        span {
+            font-weight: 400;
+        }
+}
 .weather__moredata-container {
-    
+    margin-top: 1rem;
+}
+.weather__moredata-feelstemp {
+    @extend %weather-more-data;
+    .feelstemp__container {
+        span {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}
+.weather__moredata-wind {
+    @extend %weather-more-data;
+}
+.moredata__windspeed {
+    @extend %weather-more-data;    
+}
+.moredata__winddirection-icon {
+    width: 45%;
+    font-size: 4rem;
+    line-height: 4rem;
+        p {
+            line-height: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+}
+.windspeed-speed {
+    width: 55%;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.windspeed-units {
+    font-size: 1.225rem;
+}
+.weather__moredata-presure {
+    @extend %weather-more-data;
+}
+.weather__moredata-presure {
+    @extend %weather-more-data;
+}
+.weather__moredata-precip {
+    @extend %weather-more-data;
+}
+.weather__moredata-humidity {
+    @extend %weather-more-data;
 }
