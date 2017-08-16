@@ -61,12 +61,13 @@
 }
 .weather__moredata-wind {
     @extend %weather-more-data;
+    margin: 1rem 0;
 }
 .moredata__windspeed {
     @extend %weather-more-data;    
 }
 .moredata__winddirection-icon {
-    width: 45%;
+    width: 100%;
     font-size: 4rem;
     line-height: 4rem;
         p {
