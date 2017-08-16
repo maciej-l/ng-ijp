@@ -1,0 +1,16 @@
+html {
+    font-family: $main-font-family;
+    font-size: $main-font-size;
+    font-weight: $main-font-weight;
+    color: $basic-font-color;
+}
+body {
+    padding: .250rem;
+    background-color: $gray-bcg;
+}
+.flex {
+    display: flex;
+}
+.flex__column {
+    flex-direction: column;
+}

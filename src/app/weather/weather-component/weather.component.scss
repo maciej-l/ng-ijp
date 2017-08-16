@@ -1,0 +1,27 @@
+// import variables
+@import '../../../scss/variables/_varaibles';
+
+// content
+.data__container-weather {
+    margin-top: .500rem;
+    padding: 1rem;
+    color: $text-orange;
+    text-align: center;
+}
+.weather__lastupdate {
+    margin-bottom: 1rem;
+}
+.weather__lastupdate-header {
+    font-size: 1.225rem;
+    text-transform: uppercase;
+    margin-bottom: .250rem;
+}
+.weather__lastupdate-content {
+    font-weight: 700;
+}
+.weather__current-container {
+
+}
+.weather__moredata-container {
+    
+}
