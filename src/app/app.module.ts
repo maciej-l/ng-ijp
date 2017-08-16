@@ -1,18 +1,18 @@
+import { WeatherModule } from './weather/weather.module';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { WeatherComponent } from './weather/weather-component/weather.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    WeatherComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    WeatherModule
   ],
   providers: [],
   bootstrap: [AppComponent]
