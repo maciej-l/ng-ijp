@@ -1,0 +1,55 @@
+<div class="data__container-weather">
+  <div class="weather__lastupdate">
+    <h2 class="weather__lastupdate-header">
+      Ostatia aktualizacja dla {{ weather.location }}
+    </h2>
+    <p class="weather__lastupdate-content">{{ weather.lastUpdate | slice:0:10 }} - {{ weather.lastUpdate | slice:11:16 }}</p>
+    <div class="weather__lastupdate-refresh flex flex__justify-center flex__align-center" (click)="onRefresh()">
+      <i class="wi wi-refresh"></i>
+      <span>odśwież</span>
+    </div>
+  </div>
+  <div class="flex flex__row flex__space-evenly weather__current-container">
+    <div class="weather__current-condition">
+      <i class="wi {{ weather.currCond }}"></i>
+    </div>
+    <div class="weather__current-temp">
+      <span>{{ weather.currTemp }}&deg;</span><span>C</span>
+    </div>
+  </div>
+  <div class="weather__moredata-container">
+    <div class="weather__moredata-feelstemp">
+      <h3>temperatura odczuwalna</h3>
+      <div class="feelstemp__container">
+        <span>{{ weather.currFeelsTemp }}&deg;</span>
+        <span>C</span>
+      </div>
+    </div>
+    <div class="weather__moredata-wind">
+      <h3>Wiatr</h3>
+      <div class="wind__container flex flex__space-evenly flex__align-center">
+        <div>
+          <div class="moredata__winddirection-icon">
+            <i class="wi wi-wind {{ weather.currWindDirIcon }} "></i>
+            <p>{{ weather.currWindString }}</p>
+          </div>
+        </div>
+        <div class="moredata__windspeed">
+          <span class="windspeed-speed">{{ weather.currWindSpeed }}</span><span class="windspeed-units">km/h</span>
+        </div>
+      </div>
+    </div>
+    <div class="weather__moredata-presure">
+      <h3>ciśnienie</h3>
+        <span>{{ weather.currPres }}</span> <span>mb</span>
+    </div>
+    <div class="weather__moredata-precip">
+      <h3>opady</h3>
+        <span>{{ weather.currPrec }}</span> <span>mm</span>
+    </div>
+    <div class="weather__moredata-humidity">
+      <h3>wilgotność</h3>
+      <span>{{ weather.currHum }}</span><span>%</span>
+    </div>
+  </div>
+</div>

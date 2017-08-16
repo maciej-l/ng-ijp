@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+* +++ +++ IMPORTS +++ +++
+*/
+// extends
+@import './scss/extends/_extends';
+// css reset
+@import './scss/vendors/_reset';
+
+// variables
+@import './scss/variables/_varaibles.scss';
+// content
+@import './scss/partials/_general';
+@import './scss/partials/_content.scss';
