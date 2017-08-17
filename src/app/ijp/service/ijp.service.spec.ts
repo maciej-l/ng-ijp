@@ -1,6 +1,5 @@
+import { IjpConnectionService } from './ijp-connection.service';
 import { TestBed, inject } from '@angular/core/testing';
-
-import { IjpService } from './ijp.service';
 
 describe('IjpService', () => {
   beforeEach(() => {
@@ -9,7 +8,7 @@ describe('IjpService', () => {
     });
   });
 
-  it('should be created', inject([IjpService], (service: IjpService) => {
+  it('should be created', inject([IjpConnectionService], (service: IjpConnectionService) => {
     expect(service).toBeTruthy();
   }));
 });

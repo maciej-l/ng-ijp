@@ -2,7 +2,7 @@ import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class IjpService {
+export class IjpConnectionService {
 
   apiConfig = {
     key: '1487184056',

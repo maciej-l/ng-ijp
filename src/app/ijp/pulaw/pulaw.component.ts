@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { IjpData } from './../model/ijp-data-model';
-import { IjpService } from './../service/ijp.service';
+import { IjpConnectionService } from './../service/ijp-connection.service';
 
 @Component({
   selector: 'pulaw-ijp',
   templateUrl: './pulaw.component.html',
   styleUrls: ['./pulaw.component.scss'],
-  providers: [IjpService]
+  providers: [IjpConnectionService]
 })
 export class PulawComponent implements OnInit {
   data: any;
@@ -15,7 +15,7 @@ export class PulawComponent implements OnInit {
   pm25Bcg: string;
   ijpBcg: string;
 
-  constructor(private service: IjpService) { }
+  constructor(private service: IjpConnectionService) { }
 
   insertData() {
     this.lookoData.ijp = this.data.IJP;

@@ -1,12 +1,12 @@
 import { IjpData } from './../model/ijp-data-model';
-import { IjpService } from './../service/ijp.service';
+import { IjpConnectionService } from './../service/ijp-connection.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'chabry-ijp',
   templateUrl: './chabry.component.html',
   styleUrls: ['./chabry.component.scss'],
-  providers: [ IjpService ]
+  providers: [ IjpConnectionService ]
 })
 export class ChabryComponent implements OnInit {
   data: any;
@@ -15,7 +15,7 @@ export class ChabryComponent implements OnInit {
   pm25Bcg: string;
   ijpBcg: string;
 
-  constructor(private service: IjpService) { }
+  constructor(private service: IjpConnectionService) { }
 
   insertData() {
     this.lookoData.ijp = this.data.IJP;
@@ -77,12 +77,12 @@ export class ChabryComponent implements OnInit {
     }
     return this.pm10Bcg;
   }
-
+  // refreshing data on click
   refreshOnClick() {
     this.lookoData = new IjpData(null, null, null, null);
     this.getData();
   }
-
+  // get data from looko chabry by connection service
   getData() {
     this.service.getDataFromChabry()
       .subscribe((response) => {
