@@ -32,6 +32,18 @@
 .text__ijp, .units {
     font-size: .900rem;
 }
+.container__refresh {
+    margin-top: .500rem;
+    padding: .250rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .750rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+        &:hover {
+            color: $text-orange;
+        }
+}
 .data__bcg-dgreen {
 	background-color: #1b5e20;
 }
