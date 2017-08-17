@@ -78,12 +78,20 @@ export class PulawComponent implements OnInit {
     return this.pm10Bcg;
   }
 
-  ngOnInit() {
+  refreshOnClick() {
+    this.lookoData = new IjpData(null, null, null, null);
+    this.getData();
+  }
+
+  getData() {
     this.service.getDataFromPulaw()
       .subscribe((response) => {
         this.data = response.json();
-        console.log(this.data);
         this.insertData();
       });
+  }
+
+  ngOnInit() {
+    this.getData();
   }
 }
