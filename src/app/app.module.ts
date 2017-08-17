@@ -1,3 +1,4 @@
+import { IjpModule } from './ijp/ijp.module';
 import { WeatherModule } from './weather/weather.module';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpModule,
-    WeatherModule
+    WeatherModule,
+    IjpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
