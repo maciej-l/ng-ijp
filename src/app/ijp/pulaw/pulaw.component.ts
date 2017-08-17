@@ -1,14 +1,14 @@
+import { Component, OnInit } from '@angular/core';
 import { IjpData } from './../model/ijp-data-model';
 import { IjpService } from './../service/ijp.service';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'chabry-ijp',
-  templateUrl: './chabry.component.html',
-  styleUrls: ['./chabry.component.scss'],
-  providers: [ IjpService ]
+  selector: 'pulaw-ijp',
+  templateUrl: './pulaw.component.html',
+  styleUrls: ['./pulaw.component.scss'],
+  providers: [IjpService]
 })
-export class ChabryComponent implements OnInit {
+export class PulawComponent implements OnInit {
   data: any;
   lookoData = new IjpData(null, null, null, null);
   pm10Bcg: string;
@@ -79,7 +79,7 @@ export class ChabryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.service.getDataFromChabry()
+    this.service.getDataFromPulaw()
       .subscribe((response) => {
         this.data = response.json();
         console.log(this.data);
