@@ -1,0 +1,52 @@
+@import '../variables/_varaibles';
+@import '../extends/_extends';
+
+.station__container {
+    width: 100%;
+    margin-top: .500rem;
+    padding: .250rem;
+    background-color: $light-gray-bcg;
+}
+.station__container-header {
+    text-align: center;
+    margin: .250rem 0;
+}
+.station__data-ijp {
+    @extend %station-data;
+}
+.station__data-pm25 {
+    @extend %station-data;
+}
+.station__data-pm10 {
+    @extend %station-data;
+}
+.data__ijp {
+    @extend %data;
+}
+.data__pm25 {
+    @extend %data;
+}
+.data__pm10 {
+    @extend  %data;
+}
+.text__ijp, .units {
+    font-size: .900rem;
+}
+.data__bcg-dgreen {
+	background-color: #1b5e20;
+}
+.data__bcg-green {
+	background-color: #8bc34a;
+}
+.data__bcg-yellow {
+	background-color: #fdd835;
+}
+.data__bcg-orange {
+	background-color: #ff5722;
+}
+.data__bcg-red {
+	background-color: #b71c1c;
+}
+.data__bcg-black {
+	background-color: #000;
+}

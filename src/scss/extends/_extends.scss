@@ -1,3 +1,5 @@
+@import '../variables/_varaibles';
+
 %weather-more-data {
     h3 {
         margin: .225rem 0;
@@ -9,4 +11,20 @@
             font-weight: 300;
         }
     }
+}
+%station-data {
+    width: 30%;
+    min-height: 100px;
+    padding: .250rem;
+    text-align: center;
+    color: $text-white;
+    background-color: green;
+        h3 {
+            text-transform: uppercase;
+        }
+}
+%data {
+    margin: .250rem 0;
+    font-size: 2rem;
+    font-weight: 400;
 }
