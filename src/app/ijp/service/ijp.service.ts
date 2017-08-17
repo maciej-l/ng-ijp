@@ -27,4 +27,23 @@ export class IjpService {
       return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.pulaskiego}&token=${this.apiConfig.key}`);
     }
 
+    getDataFromPilec() {
+      return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.pileckiego}&token=${this.apiConfig.key}`);
+    }
+
+    getDataFromPas() {
+      return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.pasieka}&token=${this.apiConfig.key}`);
+    }
+
+    getDataFromNwk() {
+      return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.nowaWiesKrol}&token=${this.apiConfig.key}`);
+    }
+
+    getDataFromGrud() {
+      return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.grudzice}&token=${this.apiConfig.key}`);
+    }
+
+    getDataFromSol() {
+      return this.http.get(`http://api.looko2.com/?method=GetLOOKO&id=${this.apiConfig.location.osAlSolid}&token=${this.apiConfig.key}`);
+    }
 }
