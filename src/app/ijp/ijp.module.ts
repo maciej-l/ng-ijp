@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChabryComponent } from './chabry/chabry.component';
+import { PulawComponent } from './pulaw/pulaw.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ChabryComponent],
+  declarations: [
+    ChabryComponent,
+    PulawComponent
+  ],
   exports: [
-    ChabryComponent
+    ChabryComponent,
+    PulawComponent
   ]
 })
 export class IjpModule { }
